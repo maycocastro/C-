@@ -1,0 +1,31 @@
+using System;
+
+namespace Practi3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        //Create a console app that will ask the user to enter name and salary and will perform the following calculation:
+        //Calculate 8% fee for CCSS
+        //Calculate 1% fee for Banco Popular
+        //Calculate net salary
+        //Provide user with the exact amounts for each
+        {
+            Console.WriteLine("What is your name?");
+            string nombre = Console.ReadLine();
+
+            Console.WriteLine("What is your Salary?");
+            float salario = float.Parse(Console.ReadLine());
+
+            float ccss = salario * 0.08f;
+            float popular = salario * 0.01f;
+            float neto = salario - popular - ccss;
+
+            Console.WriteLine("You are deducted for the CCSS: " + ccss);
+            Console.WriteLine("Also, you are deducted for the Banco Popular" + popular);
+            Console.WriteLine("Your net salary is:" + neto);
+
+        }
+    }
+
+}
