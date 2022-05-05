@@ -1,0 +1,16 @@
+using System;
+
+namespace Practica1CircleArea
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What is the radius of your circle?");
+            int radius = Convert.ToInt32(Console.ReadLine());
+            int cArea = (int)(Math.PI * radius * radius);
+            Console.WriteLine("The area of the circle is: " + cArea);
+            
+        }
+    }
+}
