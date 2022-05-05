@@ -1,0 +1,23 @@
+using System;
+
+namespace Practic2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        //Create a console app that takes the base and height and calculates the area of a triangle.
+        {
+            Console.WriteLine("What is the base of your triangle?");
+            float triBase = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("What is the height of your triangle?");
+            float triH = float.Parse(Console.ReadLine());
+
+
+            float triArea = (triBase * triH) / 2;
+
+            Console.WriteLine("The triangle are is:" + triArea);
+
+        }
+    }
+}
